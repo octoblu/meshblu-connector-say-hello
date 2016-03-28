@@ -1,12 +1,23 @@
-language: node_js
+language: shell
 os:
 - linux
 - osx
-node_js:
-- '5'
 addons:
   code_climate:
     repo_token: "d220cd4236a5f28ed7eaa865f718b4f81fa22d988644a89b3589bc019c70da1b"
+before_script:
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then npm install -g codeclimate-test-reporter; fi
+after_script:
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; codeclimate-test-reporter < coverage/lcov.info; fi
+before_install:
+- if [ "$TRAVIS_OS_NAME" == "osx" ]; then brew install nvm; fi
+- if [ "$TRAVIS_OS_NAME" == "osx" ]; then source $(brew --prefix nvm)/nvm.sh; fi
+- nvm install 5
+- npm install -g npm
+install:
+- npm install
+script:
+- if [ "$TRAVIS_OS_NAME" != "osx" ]; then npm test; fi
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
@@ -14,7 +25,7 @@ after_script:
 before_deploy:
 - curl -fsS https://meshblu-connector.octoblu.com/scripts/deployer/v3.0.0/build.sh -o .build.sh
 - chmod +x ./.build.sh
-- ./.build.sh runner ${TRAVIS_TAG:-$TRAVIS_COMMIT} $TRAVIS_OS_NAME
+- ./.build.sh say-hello ${TRAVIS_TAG:-$TRAVIS_COMMIT} $TRAVIS_OS_NAME
 deploy:
 - provider: s3
   access_key_id: AKIAJH2D5IPIRHYJT5IA
