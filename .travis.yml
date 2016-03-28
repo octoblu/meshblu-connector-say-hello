@@ -33,7 +33,7 @@ deploy:
     secure: "efEQq0Ho/dnkhQGEOVC4H0YBhvDw8C6tRiM3EMfJ0t9gRbbF9JY9wgjp7bKL7Wp4qRHetr3DA3L/9Fe2YerhTDZvdRDgAF4lf+U6mEvoYvwYAEUO1K0/48d6bb7mEx6uPEvTQYjKq4jzU1H4un8559FYZDv2S7EHCIw5dFOBZCrtCgyuU6DaxZ8aMctahKEhnHoPlIfZvvP4GktUdkEiikbTBk05gUpNf2i8DpsXEt09gbJXlVxb+9DEao09xkrVVJEH2f91nFNGa/y0bpt2GhMAR1BhOkU/0SLMU8TV9VuwHwX+Glm4R+N/lDU6b+64SlN/Gw3K07VDpBzMoHVg0cIuKOyoaA65gL2HlHtiYa/XI4WVeXkUGa4m4MnkY1qGt6CZN6/a4Q0nKMGXCC2V2433YllPTyMAPhL9wec3+pcsH6C04kREjhi7ZADmdBiocTwQ9cggTAuJCwYJVBpFhXCGQa+YXdYdLmLl3RCjb8YJuZBMN3dWbxmyX4tbuAebyYM0jY96CP2TWzRtfJn/p34XqPkhfJE8shBlw9qsSI+PWCbaermXxlvqM1Mea6IqmTw8DneuVfZmi8uY+YplX7vZ9TP9TWCEOi2n7zA2OTT3/GcZWI3FzFOxAtSxY2LgCVF9LaCGcIbc16RrBL/yfBpNYxpwogI8UATn2Fy85sw="
   bucket: meshblu-connector
   local-dir: deploy
-  upload-dir: tools
+  upload-dir: connectors
   region: us-west-2
   skip_cleanup: true
   on:
