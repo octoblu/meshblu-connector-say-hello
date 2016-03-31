@@ -2,8 +2,12 @@
 debug           = require('debug')('meshblu-connector-say-hello:index')
 
 class SayHello extends EventEmitter2
-  constructor: (@device) ->
+  constructor: () ->
     debug 'SayHello constructed'
+
+  close: (callback) =>
+    debug 'on close'
+    callback()
 
   onMessage: (message) =>
     debug 'onMessage', topic: message.topic
@@ -16,8 +20,7 @@ class SayHello extends EventEmitter2
     debug 'on config'
     @device = config
 
-  close: (callback) =>
-    debug 'on close'
-    callback()
+  start: (@device) =>
+    debug 'started'
 
 module.exports = SayHello
