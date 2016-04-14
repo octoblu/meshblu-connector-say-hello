@@ -23,12 +23,12 @@ matrix:
   - os: osx
     env: PACKAGER_NODE_VERSION="5.5" PACKAGER_ARCH="386"
 before_install:
-- PACKAGER_URL="https://meshblu-connector.octoblu.com/tools/packager/v8.1.3"
+- PACKAGER_URL="https://meshblu-connector.octoblu.com/tools/packager/v8.1.4"
 - curl -fsS "${PACKAGER_URL}/travis_install_node.sh" -o /tmp/travis_install_node.sh
 - chmod +x /tmp/travis_install_node.sh
 - . /tmp/travis_install_node.sh
 install:
-- npm install --global meshblu-connector-packager@8.1.3
+- npm install --global meshblu-connector-packager@8.1.4
 - npm install --build-from-source
 script:
 - npm test
