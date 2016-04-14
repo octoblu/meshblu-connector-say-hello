@@ -17,8 +17,8 @@ install:
   - SET GYP_MSVS_VERSION=2013
   - if "%PLATFORM%" == "x64" set PATH=C:\Python27-x64;%PATH%
   - if "%PLATFORM%" == "x86" SET PATH=C:\python27;%PATH%
-  - if "%PLATFORM%" == "x64" SETX /M PACKAGER_ARCH="amd64"
-  - if "%PLATFORM%" == "x86" SETX /M PACKAGER_ARCH="386"
+  - if "%PLATFORM%" == "x64" SETX /M PACKAGER_ARCH "amd64"
+  - if "%PLATFORM%" == "x86" SETX /M PACKAGER_ARCH "386"
   - echo %PACKAGER_ARCH%
   - if NOT "%APPVEYOR_REPO_TAG_NAME%" == "" npm install -g meshblu-connector-packager@8.1.5
   - if NOT "%APPVEYOR_REPO_TAG_NAME%" == "" meshblu-connector-packager
