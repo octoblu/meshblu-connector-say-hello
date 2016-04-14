@@ -20,7 +20,7 @@ install:
   - set PACKAGER_OS="windows"
   - set PACKAGER_CONNECTOR="say-hello"
   - set PACKAGER_TAG="%APPVEYOR_REPO_TAG_NAME%"
-  - if NOT "%APPVEYOR_REPO_TAG_NAME%" == "" npm install -g meshblu-connector-packager@8.1.4
+  - if NOT "%APPVEYOR_REPO_TAG_NAME%" == "" npm install -g meshblu-connector-packager@8.1.5
   - if NOT "%APPVEYOR_REPO_TAG_NAME%" == "" meshblu-connector-packager
   - ps: $root = Resolve-Path deploy; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName S3.Connector }
 build: off
