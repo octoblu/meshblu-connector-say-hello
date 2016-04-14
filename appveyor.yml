@@ -15,7 +15,7 @@ install:
   - if "%PLATFORM%" == "x64" set PATH=C:\Python27-x64;%PATH%
   - if "%PLATFORM%" == "x64" set NODE_PLATFORM="x64"
   - if "%PLATFORM%" == "x86" SET PATH=C:\python27;%PATH%
-  - if "%PLATFORM%" == "x64" SET PACKAGER_ARCH="386"
+  - if "%PLATFORM%" == "x64" SET PACKAGER_ARCH="amd64"
   - if "%PLATFORM%" == "x86" SET PACKAGER_ARCH="386"
   - set PACKAGER_OS="windows"
   - set PACKAGER_CONNECTOR="say-hello"
