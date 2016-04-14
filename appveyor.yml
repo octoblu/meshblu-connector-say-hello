@@ -3,8 +3,6 @@ environment:
 platform:
   - x64
   - x86
-build:
-  parallel: true
 shallow_clone: true
 install:
   - ps: Install-Product node $env:nodejs_version $env:Platform
