@@ -1,11 +1,12 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "2.0.20",
+  "version": "2.0.21",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/meshblu-connector-runner ./",
-    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul"
+    "start": "meshblu-connector-runner ./",
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul",
+    "package": "meshblu-connector-packager"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "chai": "^3.5.0",
     "coffee-coverage": "^1.0.1",
     "istanbul": "^0.4.2",
+    "meshblu-connector-packager": "^9.0.5",
     "meshblu-connector-runner": "^1.0.7",
     "mocha": "^2.4.5",
     "mocha-istanbul": "^0.2.0",
