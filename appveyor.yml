@@ -1,12 +1,10 @@
 environment:
   nodejs_version: 5.5.0
-  PACKAGER_CONNECTOR: "say-hello"
-  PACKAGER_OS: "windows"
-  PACKAGER_TAG: "%APPVEYOR_REPO_TAG_NAME%"
 platform:
   - x64
   - x86
 shallow_clone: true
+skip_non_tags: true
 install:
   - ps: Install-Product node $env:nodejs_version $env:Platform
   - node --version
