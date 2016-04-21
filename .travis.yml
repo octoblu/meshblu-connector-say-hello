@@ -36,8 +36,9 @@ install:
 - npm install --build-from-source
 script:
 - npm test
-before_deploy:
+after_script:
 - if [ "$TRAVIS_OS_NAME" == "linux" -a "$MAIN_BUILD" == "true" ]; then export NPM_PUBLISH="true"; fi
+before_deploy:
 - npm run package
 deploy:
 - provider: npm
