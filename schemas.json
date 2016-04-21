@@ -1,0 +1,29 @@
+{
+  "schemas": {
+    "version": "1.0.0",
+    "messages": [
+      {
+        "title": "SayHello",
+        "type": "object",
+        "properties": {
+          "greeting": {
+            "type": "string"
+          }
+        }
+      }
+    ],
+    "configure": {
+      "type": "object",
+      "properties": {
+        "options" : {
+          "type" : "object",
+          "properties" : {
+            "response" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
