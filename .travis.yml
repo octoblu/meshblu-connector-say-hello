@@ -16,7 +16,7 @@ addons:
     - libusb-1.0-0-dev
 env:
   matrix:
-  - PACKAGER_NODE_VERSION="5.5" PACKAGER_ARCH="amd64" MAIN_BUILD=true
+  - PACKAGER_NODE_VERSION="5.5" PACKAGER_ARCH="amd64" MAIN_BUILD="true"
   - PACKAGER_NODE_VERSION="5.5" PACKAGER_ARCH="386"
   global:
     secure: AhiC4hTRBECnwzSA28Q840aHYC1j4qPoxXJbUWSAvwrUEGiCNW6Z1DvTWgZIv8M9uax5lEZeGtZQJh+YYMYXkB3B3y9wESeFqZDlgjf6LwTXkyfvQQPElwBJbNWySs4i+46wl9QfTuRqyKdY50vVs8ka7KNp43pJOHLC6Sgil3aEKMvwAkLxnYcPGEWaIMU8aJ0PeM4L49lGLNHX2SX05Wv2XQju+l1ih3u3gXKM99//6NZcv/59m+UREEHpMxCcpOr2fW0tKZcADwZff3TIB3Gt8umckoj8ss04Gjd7eg3Btw+up1499ghDcVrXXs9rhWSmCVM3u+GtubvgqkU49u6tGvcnKwId2rCLldRU9Aq6/VAUqr92+N5rZNK/hoQgYZ9qlYAlAtkYvjkKARARxIr3vuHM2yAkVv7IHJdUJW3Cki5k3281tjPdWRLJpn0+uyK+4j/ksuY6H3kDi4GaQBBRGsfL7Zq74t85tTnOFcG/3651WSlZ0VAvdDaX5N9DibQpXa/bJkNK081gwMQl/s69ChBLNRwvaX3uXoBIx2rpC6aho8GdBmUI0NPzBnEAoLeg13MrqtZQGGLx18+J2bZxnefO0+F8wvewPViE5ug5YAwYZxSF7hFRNcAH3wZmb2jPyvGfS+SNScgza8LVEx1epwV5CDEhLuf6yShR9Cs=
@@ -37,7 +37,7 @@ install:
 script:
 - npm test
 before_deploy:
-- if [ "$TRAVIS_OS_NAME" == "linux" -a "$MAIN_BUILD" == "true" ]; then export NPM_PUBLISH=true; fi
+- if [ "$TRAVIS_OS_NAME" == "linux" -a "$MAIN_BUILD" == "true" ]; then export NPM_PUBLISH="true"; fi
 - npm run package
 deploy:
 - provider: npm
@@ -46,4 +46,4 @@ deploy:
     secure: yp+gaExXvHlY5rpvq+4f1eySA2xHrr6RSNN2+HZFFYcR5Pb9lkYMQv9ydLbQwhHmDG1gFbV9cdmqtUMvnoKE3+6F7ztlJH3G2UeXtW6TlrJMq5+PJ+Eeeu6XX+FuLHKirMDO3fxGGCBMvrgMP4r/jsjaRbgzKQHI5BiGWN4+xBpseNPaG9+msp+GofVZAJikN7s6bIgR8SQbwHz56ZpThBWN3goKtOmwq0+FzDiIkrfGfjLxL57QSBwSurPhN2gclvuGn6HBJHV0oUT0WjVEA5oJCpQmtybjsezhJXvHwSIaLlIzAJ0Mw8wZr8fvUaYKaxVJM3WVv9763iGYNxXb/LKltsMkWp2cSHpDw5Fq6U5cD0bo6GBZYdNh3nXqKU+bfh7h+1GVwj4PhwISe0yXbU0uXaKDN3Fd3+1ls1RAd++a3suWKaJDe/W/REkkzZif3wrMfQ2z1uQ2byGJNeXeuKS0DiYg0H+U4eU8reIRsO1ByV4y+YUK74vIicp7qeibXDHJ8DfnBv7ErFdKskDQGTi7inQRRhp4PE3iOglq1hC3TEWEgkGOshp+cVOOWsniyWOSgA4Y9tSZBRnaPkw0XYvAiE0svop5BjxIrQAw8zCXHgcfN7SKOJs4bM3DwFKKk3gX+je3coyc3Y73goUyk1geAKX49bzssuNYmZjXRPo=
   on:
     tags: true
-    condition: "$NPM_PUBLISH == true"
+    condition: "$NPM_PUBLISH = true"
