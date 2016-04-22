@@ -44,7 +44,7 @@ deploy:
   api_key:
     secure: "x0387w+8us7tWpCkxST1wgFF4KZxwsLiEAoXCs7iiPe4RD2It8Ds8qpHzz+JLGauMkJeUdzvCJM7gEBiw0gZaujO19MnT75+tvrfnyydY53yEIGCaMqJp1BluO9QoS4S1M8Utq6sF5MwbmRNORVVaX5I9ceG5qI92I69FeYrlvi/8/eMudaNvsehYiIWFKuTZ8R63a4vjNIMBlv3qCeLLG8O32Nmr+uLybB7MEo1yU77zUfzCrv5oop744C6scmfGua43gJjB4QBFkVoymGz+RekFgHH4PcrV5QXz2QQDv5uC9iOT6/SoQk6dUo0zo2eFFoFu/U/uN0y2kiR39v6Oenb2pGXkTUhDAEN0ZVxGf9UjOZlirKrQkH8R2vNoXpsLxx7RXq631LDBQvQ3eik0Y2+jUg5PzwSMX11s/4Op4Gif6AChHWuYfTnomCAW/BEVHIeZK98LwmITb7VDD544czQq4rW24rtZrsovrVrpsK612HmuWHjhU9m2t87HbAZmtlRcwCQtIZezac2pTrtyAaCpuoKFViuGEwiQU3rt10si6/C9SYOtxA7654BiT6jlUFJs1M2d0WFef6cD7HJDscikQqiUaJl+RPL1g8/NzBWRpWKv/UnldE2On+F0vmy7V8CmgaiZ8+PLlhjiDUep7UveNBb7FoLZAjbuqB/ZEc="
   file:
-  - "deploy/*"
+  - "deploy"
   skip_cleanup: true
   on:
     tags: true

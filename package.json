@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,6 @@
     "dependencyManagerVersion": "v1.0.6",
     "ignitionVersion": "v1.0.6",
     "githubSlug": "octoblu/meshblu-connector-say-hello",
-    "schemasUrl": "https://raw.githubusercontent.com/octoblu/meshblu-connector-bean/v3.0.0/schemas.json"
+    "schemasUrl": "https://raw.githubusercontent.com/octoblu/meshblu-connector-say-hello/v3.0.0/schemas.json"
   }
 }
