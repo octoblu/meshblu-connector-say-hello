@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "chai": "^3.5.0",
     "coffee-coverage": "^1.0.1",
     "istanbul": "^0.4.2",
-    "meshblu-connector-packager": "^10.0.1",
+    "meshblu-connector-packager": "^11.0.0",
     "meshblu-connector-runner": "^1.0.7",
     "mocha": "^2.4.5",
     "mocha-istanbul": "^0.2.0",
@@ -40,8 +40,9 @@
     "meshblu-connector-runner": "^2.0.0"
   },
   "meshbluConnector": {
-    "connectorInstallerVersion": "v5.1.2",
+    "connectorInstallerVersion": "v6.0.0",
     "dependencyManagerVersion": "v1.0.6",
+    "ignitionVersion": "v1.0.6",
     "githubSlug": "octoblu/meshblu-connector-say-hello",
     "schemasUrl": "https://raw.githubusercontent.com/octoblu/meshblu-connector-bean/v3.0.0/schemas.json"
   }
