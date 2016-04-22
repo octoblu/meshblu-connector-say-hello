@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
@@ -40,7 +40,7 @@
     "meshblu-connector-runner": "^2.0.0"
   },
   "meshbluConnector": {
-    "connectorInstallerVersion": "v6.0.0",
+    "connectorAssemblerVersion": "v7.0.0",
     "dependencyManagerVersion": "v1.0.6",
     "ignitionVersion": "v1.0.6",
     "githubSlug": "octoblu/meshblu-connector-say-hello",
