@@ -5,22 +5,33 @@ class SayHello extends EventEmitter2
   constructor: () ->
     debug 'SayHello constructed'
 
+  isOnline: (callback) =>
+    callback null, running: true
+
   close: (callback) =>
     debug 'on close'
     callback()
 
   onMessage: (message) =>
-    debug 'onMessage', topic: message.topic
-    return unless message.topic == 'greeting'
+    debug 'on message', message
+    { topic, devices, fromUuid } = message
+    return if '*' in devices
+    return if topic == 'response'
+    fromUuid = '*' if fromUuid == @uuid
+    debug "saying #{@response} to #{fromUuid}..."
+    @emit 'message', devices: [fromUuid], topic: 'response', payload: @response
 
-    debug 'saying hello...'
-    @emit 'message', devices: ['*'], topic: 'response', payload: 'hello'
-
-  onConfig: (config) =>
+  onConfig: (device) =>
     debug 'on config'
-    @device = config
+    @_setResponse device
 
-  start: (@device) =>
+  start: (device) =>
     debug 'started'
+    { @uuid } = device
+    @_setResponse device
+
+  _setResponse: (device) =>
+    response = device?.options?.response
+    @response = response ? 'hello'
 
 module.exports = SayHello
