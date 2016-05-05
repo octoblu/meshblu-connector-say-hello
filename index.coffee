@@ -13,6 +13,7 @@ class SayHello extends EventEmitter2
     callback()
 
   onMessage: (message) =>
+    return unless message?
     debug 'on message', message
     { topic, devices, fromUuid } = message
     return if '*' in devices

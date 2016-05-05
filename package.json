@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
@@ -36,11 +36,19 @@
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "eventemitter2": "^1.0.0",
-    "meshblu-connector-runner": "^3.0.1"
+    "meshblu-connector-runner": "^3.0.2"
   },
   "meshbluConnector": {
     "ignitionVersion": "v2.0.2",
     "githubSlug": "octoblu/meshblu-connector-say-hello",
     "schemasUrl": "https://raw.githubusercontent.com/octoblu/meshblu-connector-say-hello/v3.0.0/schemas.json"
+  },
+  "platformDependencies": {
+    "darwin": [],
+    "win32": [],
+    "win64": [],
+    "linux": [],
+    "android": [],
+    "ios": []
   }
 }
