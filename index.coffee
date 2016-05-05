@@ -1,7 +1,7 @@
-{EventEmitter2} = require 'eventemitter2'
+{ EventEmitter } = require 'events'
 debug           = require('debug')('meshblu-connector-say-hello:index')
 
-class SayHello extends EventEmitter2
+class SayHello extends EventEmitter
   constructor: () ->
     debug 'SayHello constructed'
 
