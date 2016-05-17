@@ -1,9 +1,9 @@
 {
   "schemas": {
     "version": "1.0.0",
-    "messages": [
-      {
-        "title": "SayHello",
+    "message": {
+      "default": {
+        "title": "Default Message",
         "type": "object",
         "properties": {
           "greeting": {
@@ -11,15 +11,18 @@
           }
         }
       }
-    ],
+    },
     "configure": {
-      "type": "object",
-      "properties": {
-        "options" : {
-          "type" : "object",
-          "properties" : {
-            "response" : {
-              "type" : "string"
+      "default": {
+        "title": "Default Configuration",
+        "type": "object",
+        "properties": {
+          "options" : {
+            "type" : "object",
+            "properties" : {
+              "response" : {
+                "type" : "string"
+              }
             }
           }
         }
