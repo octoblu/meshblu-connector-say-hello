@@ -1,12 +1,14 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
     "start": "meshblu-connector-runner",
-    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul",
-    "package": "meshblu-connector-packager"
+    "test": "mocha",
+    "package": "meshblu-connector-packager",
+    "generate:package": "meshblu-connector-packager",
+    "generate:schema": "meshblu-connector-schema-generator > schemas.json"
   },
   "repository": {
     "type": "git",
@@ -35,18 +37,19 @@
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "meshblu-config": "^4.0.0",
-    "meshblu-connector-runner": "^6.0.0"
+    "meshblu-connector-runner": "^7.0.0",
+    "fs-cson": "^0.3.2"
   },
   "meshbluConnector": {
     "githubSlug": "octoblu/meshblu-connector-say-hello",
-    "schemasUrl": "https://raw.githubusercontent.com/octoblu/meshblu-connector-say-hello/v4.1.0/schemas.json"
+    "schemasUrl": "https://file-downloader.octoblu.com/github-release/octoblu/meshblu-connector-say-hello/v6.0.0/schemas.json"
   },
   "platformDependencies": {
     "darwin": [],
     "win32": [],
     "win64": [],
     "linux": [],
-    "android": [],
-    "ios": []
+    "android": null,
+    "ios": null
   }
 }
