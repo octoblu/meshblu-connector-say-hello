@@ -3,6 +3,7 @@
 [![Dependency status](http://img.shields.io/david/octoblu/meshblu-connector-say-hello.svg?style=flat)](https://david-dm.org/octoblu/meshblu-connector-say-hello)
 [![devDependency Status](http://img.shields.io/david/dev/octoblu/meshblu-connector-say-hello.svg?style=flat)](https://david-dm.org/octoblu/meshblu-connector-say-hello#info=devDependencies)
 [![Build Status](http://img.shields.io/travis/octoblu/meshblu-connector-say-hello.svg?style=flat&branch=master)](https://travis-ci.org/octoblu/meshblu-connector-say-hello)
+[![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
 
 [![NPM](https://nodei.co/npm/meshblu-connector-say-hello.svg?style=flat)](https://npmjs.org/package/meshblu-connector-say-hello)
 
