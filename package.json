@@ -1,6 +1,6 @@
 {
   "name": "meshblu-connector-say-hello",
-  "version": "7.0.3",
+  "version": "7.0.4",
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
