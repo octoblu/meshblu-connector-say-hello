@@ -1320,9 +1320,9 @@ meshblu-config@^7.0.0:
     lodash "^3.9.1"
     meshblu-encryption "^2.0.1"
 
-meshblu-connector-cli@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/meshblu-connector-cli/-/meshblu-connector-cli-1.0.3.tgz#1c3b0e857292d7020a66bfbaa482c2ed1397b11e"
+meshblu-connector-cli@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/meshblu-connector-cli/-/meshblu-connector-cli-1.0.4.tgz#6ad4cfbc974fae811c3a2a9d86bd1e3a0f6513ac"
   dependencies:
     meshblu-connector-runner "^10.8.4"
 

@@ -64,7 +64,7 @@
     "debug": "^2.2.0",
     "fs-cson": "^0.3.2",
     "meshblu-config": "^7.0.0",
-    "meshblu-connector-cli": "^1.0.3",
+    "meshblu-connector-cli": "^1.0.4",
     "meshblu-connector-runner": "^10.8.4",
     "meshblu-connector-schema-generator": "^2.1.0"
   },
