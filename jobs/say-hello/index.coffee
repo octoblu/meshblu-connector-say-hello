@@ -1,7 +1,7 @@
 module.exports = {
   action:   require './action'
-  form:     require './form.cson'
+  form:     require './form.json'
   job:      require './job'
-  message:  require './message.cson'
-  response: require './response.cson'
+  message:  require './message.json'
+  response: require './response.json'
 }

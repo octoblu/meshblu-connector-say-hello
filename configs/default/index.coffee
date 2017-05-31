@@ -1,4 +1,4 @@
 module.exports = {
-  form:   require './form.cson'
-  config: require './config.cson'
+  form:   require './form.json'
+  config: require './config.json'
 }

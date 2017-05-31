@@ -16,6 +16,19 @@
     "type": "git",
     "url": "git+https://github.com/octoblu/meshblu-connector-say-hello.git"
   },
+  "pkg": {
+    "scripts": [
+      "index.js",
+      "src/*.js",
+      "jobs/**/*.js",
+      "configs/**/*.js"
+    ],
+    "assets": [
+      "package.json",
+      "jobs/**/*.json",
+      "configs/**/*.json"
+    ]
+  },
   "keywords": [
     "meshblu",
     "connector"
@@ -27,21 +40,24 @@
   },
   "homepage": "https://github.com/octoblu/meshblu-connector-say-hello#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3",
-    "mocha-multi": "^0.9.1",
+    "chai": "^4.0.0",
+    "cson": "^4.1.0",
+    "mocha": "^3.4.2",
+    "mocha-multi": "^0.11.0",
     "mocha-osx-reporter": "^0.1.2",
-    "nyc": "^8.3.0",
-    "sinon": "^1.17.4",
+    "nyc": "^10.3.2",
+    "sinon": "^2.3.2",
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "fs-cson": "^0.3.2",
-    "meshblu-config": "^4.0.0",
-    "meshblu-connector-runner": "^8.1.1",
-    "meshblu-connector-schema-generator": "^2.1.0"
+    "interpret": "^1.0.3",
+    "meshblu-config": "^7.0.0",
+    "meshblu-connector-runner": "^10.8.3",
+    "meshblu-connector-schema-generator": "^2.1.0",
+    "rechoir": "^0.6.2"
   },
   "meshbluConnector": {
     "githubSlug": "octoblu/meshblu-connector-say-hello",
