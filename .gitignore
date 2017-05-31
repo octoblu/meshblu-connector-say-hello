@@ -40,4 +40,4 @@ src/*.js
 src/*.js.map
 src/*.json
 
-meshblu-connector-say-hello
+meshblu-connector-say-hello*
