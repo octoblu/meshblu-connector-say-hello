@@ -1,0 +1,12 @@
+module.exports =
+  title: 'SayHello'
+  type: 'object'
+  properties:
+    data:
+      type: 'object'
+      properties:
+        name:
+          type: 'string'
+      required: [
+        'name'
+      ]

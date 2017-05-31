@@ -4,7 +4,7 @@
   "description": "Meshblu connector say hello",
   "main": "index.js",
   "scripts": {
-    "start": "meshblu-connector-runner",
+    "start": "meshblu-connector",
     "test": "mocha",
     "generate:package": "meshblu-connector-packager",
     "generate:schema": "meshblu-connector-schema-generator > schemas.json",
@@ -61,6 +61,7 @@
     "debug": "^2.2.0",
     "fs-cson": "^0.3.2",
     "meshblu-config": "^7.0.0",
+    "meshblu-connector-cli": "^1.0.1",
     "meshblu-connector-runner": "^10.8.3",
     "meshblu-connector-schema-generator": "^2.1.0"
   },
