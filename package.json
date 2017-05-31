@@ -16,7 +16,15 @@
     "type": "git",
     "url": "git+https://github.com/octoblu/meshblu-connector-say-hello.git"
   },
+  "bin": "command.js",
   "pkg": {
+    "targets": [
+      "node7-macos-x64",
+      "node7-linux-x64",
+      "node7-linux-x86",
+      "node7-win-x64",
+      "node7-win-x86"
+    ],
     "scripts": [
       "index.js",
       "src/*.js",
@@ -41,7 +49,6 @@
   "homepage": "https://github.com/octoblu/meshblu-connector-say-hello#readme",
   "devDependencies": {
     "chai": "^4.0.0",
-    "cson": "^4.1.0",
     "mocha": "^3.4.2",
     "mocha-multi": "^0.11.0",
     "mocha-osx-reporter": "^0.1.2",
@@ -53,11 +60,9 @@
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "fs-cson": "^0.3.2",
-    "interpret": "^1.0.3",
     "meshblu-config": "^7.0.0",
     "meshblu-connector-runner": "^10.8.3",
-    "meshblu-connector-schema-generator": "^2.1.0",
-    "rechoir": "^0.6.2"
+    "meshblu-connector-schema-generator": "^2.1.0"
   },
   "meshbluConnector": {
     "githubSlug": "octoblu/meshblu-connector-say-hello",

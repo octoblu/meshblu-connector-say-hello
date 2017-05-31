@@ -59,8 +59,12 @@ main() {
     echo "module.exports = require('./src/srv-failover.js');" > ./index.js
   popd > /dev/null
 
+  if [ -d ./dist ]; then
+    rm -rf ./dist
+  fi
+  mkdir ./dist
   echo '* pkg connector'
-  pkg --config package.json command.js
+  pkg --out-dir ./dist .
 }
 
 main "$@"
