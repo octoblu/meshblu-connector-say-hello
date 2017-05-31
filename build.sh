@@ -22,6 +22,7 @@ main() {
     echo '* coffee compile meshblu-connector-runner'
     coffee --map --compile src/*.coffee
     echo "module.exports = require('./src/index.js');" > ./index.js
+    echo "module.exports = require('./src/runner.js');" > ./runner.js
   popd > /dev/null
 
   pushd ./node_modules/meshblu > /dev/null
